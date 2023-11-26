@@ -1,0 +1,30 @@
+// form style 
+.form-data {
+  background-color:#36383d ;
+  padding: 5px;
+  max-width: 620px;
+  width: 100%;
+  border: 3px solid #292c31;
+  border-radius: 10px;
+  input,button {
+    padding: 10px;
+    border: 0;
+    font-size: 20px;
+  }
+  input {
+    width: 75%;
+    outline: none;
+    background-color: #36383d;
+
+  }
+  button {
+    width: 21%;
+    background-color: #292c31;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background 0.3s ease;
+    &:hover {
+      background-color: #45464a;
+    }
+  }
+}

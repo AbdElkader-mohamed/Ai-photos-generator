@@ -1,0 +1,49 @@
+// photo style 
+.images-parent {
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  grid-auto-rows: minmax(300px , auto);
+  gap: 16px;
+  > div {
+    width: 100%;
+    height: 100%;
+    background-color: #292c31;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #36383d;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+// .shine {
+//   position: relative;
+// }
+.shine {
+  background: #f6f7f817;
+  background-image: linear-gradient(233deg, #f6f7f825 0%, #edeef123 20%, #f6f7f827 40%, #f6f7f825 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  background-blend-mode: hard-light;
+  display: inline-block;
+  position: relative; 
+  
+  -webkit-animation-duration: 1.3s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes placeholderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    
+    100% {
+      background-position: 468px 0; 
+    }
+  }
+  
